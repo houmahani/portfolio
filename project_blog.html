@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Houmahani Kane - Projet Blog</title>
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header id="header_page" class="header_blog">
+    <nav>
+      <!-- Back to front page -->
+      <a href="index.html"><p class="nav to_frontpage"></p></a>
+      
+      <!-- Back to projects -->
+      <a href="projects.html"><p class="nav to_projects"></p></a>
+      
+      <!-- Scroll to Top -->
+      <i class="far fa-arrow-alt-circle-up fa-2x scrollToTop"></i>
+    </nav>
+    
+    <!-- Main header content centered -->
+    <div class="project_header flex_header header_title_main transition transition_fadeinup">
+      <!-- Header title -->
+      <div class="project_detail_title">
+        <h1>Le blog de voyage</h1>
+        <p>Création d'un blog de voyage créer de toutes pièces sous PHP et mySQL.</p>
+      </div>
+      
+      <!-- Project info -->
+      <div class="project_detail_info flex">
+        <div class="info_left">
+          <div class="year">
+            <span>Année</span>
+            <p>2018</p>
+          </div>
+
+          <div class="category">
+            <span>Catégorie</span>
+            <p>Blog</p>
+          </div>
+        </div>
+
+        <div class="info_right">
+          <div class="language">
+            <span>Technologies</span>
+            <p>HTML5 - CSS3 - PHP - jQuery - Ajax</p>
+          </div>
+
+          <div class="duration">
+            <span>Durée</span>
+            <p>En 3 jours lors de la formation à la 3W Academy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore">
+        <p>Explorer</p>
+        <i class="fas fa-long-arrow-alt-down"></i>
+      </div>
+
+    </div>
+  </header>
+  
+  <!-- Transition -->
+  <div class="transition transition_fadeinup" id="main">
+   
+    <main id="main_projects">
+      <!-- Project Brief -->
+      <section>
+        <h2>Le projet</h2>
+        <p>Développement d'un blog en PHP avec l'utilisation du PDO pour se connecter à la base de donnée mySQL. Pour la mise en forme, j'ai utilisé HTML5 et CSS3.</p>	
+        <button class="see_project">Tester le projet</button>
+      </section>
+      
+      <!-- Project Features -->
+      <section id="project_features">
+        <h2>Les fonctionnalités</h2>
+        
+        <!-- Affichage de la liste des articles  -->
+        <article class="flex">
+          <div class="details_image">
+            <img class="shadow" src="assets/img/screenshots/blog/blog_liste_articles.jpg" alt="Screenshot de la page d'accueil du projet blog">
+          </div>
+          
+          <div class="details_content">
+            <h3>Affichage de la liste des articles</h3>
+            <p>Les derniers articles du blog sont listés dans la page <em>index.php</em>. Les textes sont protégés par <em>htmlspecialchars()</em>.</p>
+          </div>
+        </article>
+        
+        <!-- Affichage d'un article -->
+        <article class="flex">
+          <div class="details_image">
+            <img class="shadow" src="assets/img/screenshots/blog/blog_articles.jpg" alt="Screenshot d'un article du projet blog">
+          </div>
+          
+          <div class="details_content">
+            <h3>Affichage d'un article et des commentaires</h3>
+            <p>L'affichage d'un article avec ses commentaires. L'utilisateur peut laisser un commentaire qui sera stocké dans la base donnée <em>mySQL</em> puis affiché dans l'article correpondant.</p>
+          </div>
+        </article>
+
+        <!-- Rédaction d'un article -->
+        <article class="flex">
+         <div class="details_image">
+            <img class="shadow" src="assets/img/screenshots/blog/blog_new_articles.png" alt="Screenshot de la page administration du projet blog">
+          </div>
+          
+          <div class="details_content">
+            <h3>Rédaction d'un article</h3>
+            <p>Dans la partie Administration du site, l'admin peut rédiger un nouvel article, modifier ou supprimer les articles existants.</p>
+          </div>
+        </article>
+        <button class="see_project">Tester le projet</button>
+      </section>
+     
+      <section class="next_project next_portfolio">
+        <a href="project_portfolio.html">
+          <span>Projet suivant</span><br>
+          <h4>Mon portfolio</h4>
+        </a>
+      </section>
+    </main>
+
+    <footer class="flex">
+     <!-- Contact -->
+      <ul>
+        <!--<li><a href="#"><i class="fab fa-github" title="Retrouvez-moi sur Git"></i></a></li>-->
+        
+        <li><a href="http://www.linkedin.com/in/houmahanikane"><i class="fab fa-linkedin-in" title="Retrouvez-moi sur Linkedin"></i></a>
+        </li>
+        
+        <li><a href="mailto:houmahanikane@gmail.com"><i class="fas fa-at" title="N'hésitez pas à me contacter"></i></a></li>
+        
+        <li><a href="assets/cv/cv-houmahani-kane.pdf"><i class="fas fa-file-pdf" title="Télécharger mon CV"></i></a></li>
+      </ul>
+      
+      <!-- Copyright -->
+      <div class="copyright">
+        <h4>Houmahani Kane</h4>
+        <p>(c) Site réalisé par Houmahani Kane - 2018</p>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

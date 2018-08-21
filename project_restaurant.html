@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Houmahani Kane - Projet Restaurant</title>
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header id="header_page" class="header_restaurant">
+    <nav>
+      <!-- Back to front page -->
+      <a href="index.html"><p class="nav to_frontpage"></p></a>
+      
+      <!-- Back to projects -->
+      <a href="projects.html"><p class="nav to_projects"></p></a>
+      
+      <!-- Scroll to Top -->
+      <i class="far fa-arrow-alt-circle-up fa-2x scrollToTop"></i>
+    </nav>
+    
+    <!-- Main header content centered -->
+    <div class="project_header flex_header header_title_main transition transition_fadeinup">
+      <!-- Header title -->
+      <div class="project_detail_title">
+        <h1>Le Restaurant</h1>
+        <p>Création d'un site restaurant e-commerce sous PHP, jQuery, Ajax et avec le framework de la 3W Academy</p>
+      </div>
+      
+      <!-- Project info -->
+      <div class="project_detail_info flex">
+        <div class="info_left">
+          <div class="year">
+            <span>Année</span>
+            <p>2018</p>
+          </div>
+
+          <div class="category">
+            <span>Catégorie</span>
+            <p>Site E-Commerce</p>
+          </div>
+        </div>
+
+        <div class="info_right">
+          <div class="language">
+            <span>Technologies</span>
+            <p>HTML5 - CSS3 - PHP - jQuery - Ajax</p>
+          </div>
+
+          <div class="duration">
+            <span>Durée</span>
+            <p>En 5 jours lors de la formation à la 3W Academy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore">
+        <p>Explorer</p>
+        <i class="fas fa-long-arrow-alt-down"></i>
+      </div>
+
+    </div>
+  </header>
+  
+  <!-- Transition -->
+  <div class="transition transition_fadeinup" id="main">
+   
+    <main id="main_projects">
+      <!-- Project Brief -->
+      <section>
+        <h2>Le projet</h2>
+        <p>Pendant la formation à la 3W Academy, nous avons réalisé un site restaurant e-commerce sous PHP, jQuery, Ajax et avec le framework de l'organisme de formation. Objectif : L'utilisateur peut créer un compte, se connecter, passer une commande et/ou réserver une table. L'admin peut ajouter, supprimer ou modifier des produits de la carte.</p>	
+        <button class="see_project">Tester le projet</button>
+      </section>
+      
+      <!-- Project Features -->
+      <section id="project_features">
+        <h2>Les fonctionnalités</h2>
+
+        <!-- Inscription et connexion -->
+        <article class="flex">
+         <div class="details_image">
+            <img class="shadow" src="assets/img/screenshots/restaurant/restaurant_connexion.png" alt="Screenshot de la page  connexion du projet restaurant">
+          </div>
+          
+          <div class="details_content">
+            <h3>Inscription et connexion</h3>
+            <p>L'utilsateur créer un compte à travers un formulaire. Les mots de passe des utilisateurs sont 'hashés' pour plus de sécurité.</p>
+          </div>
+        </article>
+
+        <!-- Prise de commande et réservation -->
+        <article class="flex">
+          <div class="details_image">
+              <img class="shadow" src="assets/img/screenshots/restaurant/restaurant_commande.png" alt="Screenshot de la page  de commande du projet restaurant">
+          </div>
+          
+          <div class="details_content">
+            <h3>Prise de commande et réservation</h3>
+            <p>Une fois connecté, les utilisateurs ont la possibilité de passer une commande ou réserver une table. Les produits choisis s'affichent dans un panier avec le prix total.</p>
+          </div>
+        </article>
+
+        <!-- Administration -->
+        <article class="flex">
+          <div class="details_image">
+              <img class="shadow" src="assets/img/screenshots/restaurant/restaurant_admin.png" alt="Screenshot de la page  administration du projet restaurant">
+          </div>
+          
+          <div class="details_content">
+            <h3>Administration</h3>
+            <p>Nous avons créer un panneau d'aministration pour permettre l'ajout, la suppression ou la modification des produits de la carte.</p>
+          </div>
+        </article>
+        <button class="see_project">Tester le projet</button>
+      </section>
+
+      <section class="next_project next_blog">
+        <a href="project_blog.html">
+          <span>Projet suivant</span><br>
+          <h4>Le blog</h4>
+        </a>
+      </section>
+    </main>
+  </div>
+   
+    <footer class="flex">
+     <!-- Contact -->
+      <ul>
+        <!--<li><a href="#"><i class="fab fa-github" title="Retrouvez-moi sur Git"></i></a></li>-->
+        
+        <li><a href="http://www.linkedin.com/in/houmahanikane"><i class="fab fa-linkedin-in" title="Retrouvez-moi sur Linkedin"></i></a>
+        </li>
+        
+        <li><a href="mailto:houmahanikane@gmail.com"><i class="fas fa-at" title="N'hésitez pas à me contacter"></i></a></li>
+        
+        <li><a href="assets/cv/cv-houmahani-kane.pdf"><i class="fas fa-file-pdf" title="Télécharger mon CV"></i></a></li>
+      </ul>
+      
+      <!-- Copyright -->
+      <div class="copyright">
+        <h4>Houmahani Kane</h4>
+        <p>(c) Site réalisé par Houmahani Kane - 2018</p>
+      </div>
+    </footer>
+  
+  <!-- jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
