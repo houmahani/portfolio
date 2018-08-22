@@ -197,7 +197,7 @@ button {
 
 /* ---- HEADER ---- */
 header {
-  padding: 2px;
+  padding: 50px;
 	margin: 0 auto;
   height: 100vh;
 	background-color: #f5cb5c;
@@ -212,9 +212,9 @@ header {
   height: 100%;
 }
 
-/* About and Projects pages have a header height of 40vh */
+/* About and Projects pages have a header height of 100% */
 .new_height {
-  height: 40vh;
+  height: 100vh;
 }
 
 /* Header navigation */
@@ -428,6 +428,8 @@ article:last-child{
 .dev, .webmarketing {
   padding: 16%;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 20px auto;
 }
 
 .skills ul {
@@ -1030,6 +1032,11 @@ footer ul li {
   
   .mobile_btns {
     display: none;
+  }
+  
+  /* PAGE HEADERS */
+  .new-height {
+    height: 40vh;
   }
   
   /* --- PAGE : ABOUT ---  */
