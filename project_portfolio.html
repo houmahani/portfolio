@@ -18,8 +18,13 @@
 </head>
 <body>
 
-  <header id="header_page" class="header_portfolio">
-    <nav>
+  <header id="header_page" class="header_portfolio transition transition_fadeinup">
+    <nav class="mobile_nav_back">
+      <a href="projects.html"><p class="nav to_projects"><i class="fas fa-long-arrow-alt-left"></i> Retour</p></a>
+    </nav>
+    
+    <!-- Desktop nav -->
+    <nav class="hide">
       <!-- Back to front page -->
       <a href="index.html"><p class="nav to_frontpage"></p></a>
       
@@ -31,7 +36,7 @@
     </nav>
     
     <!-- Main header content centered -->
-    <div class="project_header flex_header header_title_main transition transition_fadeinup">
+    <div class="header_title_main project_header project_header_main flex_header">
       <!-- Header title -->
       <div class="project_detail_title">
         <h1>Le portfolio</h1>
@@ -40,7 +45,6 @@
       
       <!-- Project info -->
       <div class="project_detail_info flex">
-        <div class="info_left">
           <div class="year">
             <span>Année</span>
             <p>2018</p>
@@ -50,9 +54,7 @@
             <span>Catégorie</span>
             <p>Site Web</p>
           </div>
-        </div>
 
-        <div class="info_right">
           <div class="language">
             <span>Technologies</span>
             <p>HTML5 - CSS3 - PHP - jQuery - Ajax</p>
@@ -62,14 +64,12 @@
             <span>Durée</span>
             <p>En 8 jours lors de la formation à la 3W Academy</p>
           </div>
-        </div>
       </div>
-
-      <div class="explore">
-        <p>Explorer</p>
-        <i class="fas fa-long-arrow-alt-down"></i>
-      </div>
-
+    </div>
+    
+    <div class="explore hide">
+      <p>Explorer</p>
+      <i class="fas fa-long-arrow-alt-down"></i>
     </div>
   </header>
   
@@ -90,6 +90,11 @@
         
         <!-- Intégration -->
         <article class="flex">
+         <div class="details_content">
+            <h3>Intégration</h3>
+            <p>Développé en HTML5, CSS3 et jQuery, j'ai choisi une couleur jaune vive avec un cadre blanc pour la touche de sobriété.</p>
+          </div>
+          
           <div class="details_image flex">
             <div class="square yellow">
               <p>#f5cb5c</p>
@@ -104,34 +109,29 @@
               <p>#242423</p>
             </div>
           </div>
-          
-          <div class="details_content">
-            <h3>Intégration</h3>
-            <p>Développé en HTML5, CSS3 et jQuery, j'ai choisi une couleur jaune vive avec un cadre blanc pour la touche de sobriété.</p>
-          </div>
         </article>
 
         <!-- L'accent sur les projets -->
         <article class="flex">
-         <div class="details_image">
-            <img class="shadow" src="assets/img/screenshots/portfolio/portfolio_project_detail.png" alt="Screenshot de la page du projet blog du portfolio">
-          </div>
-          
           <div class="details_content">
             <h3>L'accent sur les projets</h3>
             <p>Le portfolio me permet avant tout de mettre en avant mes projets. Ainsi, j'explique l'objectif des projets et liste leurs fonctionnalités.</p>
+          </div>
+          
+         <div class="details_image">
+            <img class="shadow" src="assets/img/screenshots/portfolio/portfolio_project_detail.png" alt="Screenshot de la page du projet blog du portfolio">
           </div>
         </article>
 
         <!-- Optimisé pour le mobile -->
         <article class="flex">
-          <div class="details_image">
-            <img class="no_shadow"  src="assets/img/screenshots/portfolio/portfolio_mobile.png" alt="Screenshot de la page du projet blog du portfolio">
-          </div>
-          
-          <div class="details_content">
+         <div class="details_content">
             <h3>Optimisé pour le mobile</h3>
             <p>Le portfolio est réalisé en <em>Mobile First</em>. Pour l'optimisation, j'utilise les <em>media queries</em>. Il n'existe pas de cadre blanc ni de surplus visuels.</p>
+          </div>
+          
+          <div class="details_image">
+            <img class="no_shadow"  src="assets/img/screenshots/portfolio/portfolio_mobile.png" alt="Screenshot de la page du projet blog du portfolio">
           </div>
         </article>
 <!--        <button class="see_project">Tester le projet</button>-->

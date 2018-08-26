@@ -19,7 +19,7 @@
 <body>
 
 	<!-- White Frame -->
-  <div id="white_frame">
+  <div id="white_frame" class="hide">
     <!-- Top -->
 		<div class="top frame">
 			 <a href="index.html"><p class="nav to_frontpage"></p></a>
@@ -46,8 +46,9 @@
 		</div>
   </div>
   
-	<header class="new_height transition transition_fadein">
-		<div class="new_height flex_header">
+	<header class="new_height transition transition_fadein flex_header">
+     <!-- Main content centered -->
+     <div class="header_title_main">
 			<h1><a href="./index.html">Projets</a></h1>
 		  <p>Développeuse intégratrice</p>
 			<a href="assets/cv/cv-houmahani-kane.pdf" title="Télécharger mon CV"><button class="btn_resume">Télécharger mon CV</button></a>
@@ -56,10 +57,22 @@
       <div class="mobile_btns">
         <a href="./about.html"><button class="mobile_btn">About</button></a>
       </div>
-		</div>
-	
+      
+      <!-- Mobile Contact-->
+      <ul>
+        <!--<li><a href="#"><i class="fab fa-github" title="Retrouvez-moi sur Git"></i></a></li>-->
+        
+        <li><a href="http://www.linkedin.com/in/houmahanikane"><i class="fab fa-linkedin-in" title="Retrouvez-moi sur Linkedin"></i></a>
+        </li>
+        
+        <li><a href="mailto:houmahanikane@gmail.com"><i class="fas fa-at" title="N'hésitez pas à me contacter"></i></a></li>
+        
+        <li><a href="assets/cv/cv-houmahani-kane.pdf"><i class="fas fa-file-pdf" title="Télécharger mon CV"></i></a></li>
+      </ul>
+    </div>
+    
     <!-- To About -->
-    <a href="./about.html">	
+    <a class="hide show_about" href="./about.html">	
       <button class="btn_about btn_side">
         <div class="arrows">
           <i class="arrow arrow_left"></i>

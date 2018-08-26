@@ -19,7 +19,7 @@
 <body>
 
   <!-- White Frame -->
-  <div id="white_frame">
+  <div id="white_frame" class="hide">
     <!-- Top -->
 		<div class="top frame">
       <!-- To Front Page -->
@@ -48,11 +48,11 @@
   </div>
   
   <!-- Scroll to Top -->
-  <i class="far fa-arrow-alt-circle-up fa-2x scrollToTop"></i>
+  <i class="far fa-arrow-alt-circle-up fa-2x scrollToTop hide"></i>
     
-	<header class="new_height transition transition_fadein">
+	<header class="new_height transition transition_fadein flex_header">
 	  <!-- Main content centered -->
-		<div class="new_height flex_header">
+	  <div class="header_title_main">
 			<h1><a href="./index.html">About</a></h1>
 		  <p>Développeuse intégratrice</p>
       <a href="assets/cv/cv-houmahani-kane.pdf" title="Télécharger mon CV"><button class="btn_resume">Télécharger mon CV</button></a>
@@ -61,11 +61,23 @@
       <div class="mobile_btns">
         <a href="./projects.html"><button class="mobile_btn">Projects</button></a>
       </div>
-		</div>
-	
+         
+      <!-- Mobile Contact-->
+      <ul>
+        <!--<li><a href="#"><i class="fab fa-github" title="Retrouvez-moi sur Git"></i></a></li>-->
+        
+        <li><a href="http://www.linkedin.com/in/houmahanikane"><i class="fab fa-linkedin-in" title="Retrouvez-moi sur Linkedin"></i></a>
+        </li>
+        
+        <li><a href="mailto:houmahanikane@gmail.com"><i class="fas fa-at" title="N'hésitez pas à me contacter"></i></a></li>
+        
+        <li><a href="assets/cv/cv-houmahani-kane.pdf"><i class="fas fa-file-pdf" title="Télécharger mon CV"></i></a></li>
+      </ul>
+    </div>
+    
     <!-- To About (Hidden) -->
     <a class="hide" href="./about.html">	
-      <button class="btn_about btn_side">
+      <button class="desktop_btns btn_about btn_side">
         <div class="arrows">
           <i class="arrow arrow_left"></i>
           <i class="arrow arrow_left"></i>
@@ -76,8 +88,8 @@
     </a>
 	
     <!-- To Projects -->
-    <a href="./projects.html">
-      <button class="btn_projects btn_side">
+    <a class="hide show_projects" href="./projects.html">
+      <button class="desktop_btns btn_projects btn_side">
         <div class="arrows">
           <i class="arrow arrow_right"></i>
           <i class="arrow arrow_right"></i>
@@ -105,7 +117,6 @@
 					  <li><p>Prénom : <strong>Houmahani</strong></p></li>
 					  <li><p>Nom : <strong>KANE</strong></p></li>
 					  <li><p>Âge : <strong>23 ans</strong></p></li>
-					  <li><p>Mon principal trait de caractère : <strong>Le calme</strong></p></li>
 					  <li><p>Ce que j'aime faire : <strong>Voyager, lire</strong></p></li>
 					</ul>
 				</div>

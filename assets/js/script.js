@@ -1,12 +1,12 @@
 (function($) {
 	
-  $(window).on('scroll', function() {
+  $(window).on('resize scroll', function() {
     
 		// Effet fade in au scroll
     $('article:not(.visible)');
 		
 		$('article').each(function() {
-			if ($(this).offset().top + $(this).outerHeight() - 150 < $(window).scrollTop() + $(window).height()) {
+			if ($(this).position().top < $(window).scrollTop()) {
 				$(this).addClass('visible');
 			}
 		}); 

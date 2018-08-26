@@ -18,8 +18,13 @@
 </head>
 <body>
 
-  <header id="header_page" class="header_blog">
-    <nav>
+  <header id="header_page" class="header_blog transition transition_fadeinup">
+    <nav class="mobile_nav_back">
+      <a href="projects.html"><p class="nav to_projects"><i class="fas fa-long-arrow-alt-left"></i> Retour</p></a>
+    </nav>
+    
+    <!-- Desktop nav -->
+    <nav class="hide">
       <!-- Back to front page -->
       <a href="index.html"><p class="nav to_frontpage"></p></a>
       
@@ -31,7 +36,7 @@
     </nav>
     
     <!-- Main header content centered -->
-    <div class="project_header flex_header header_title_main transition transition_fadeinup">
+    <div class="header_title_main project_header project_header_main flex_header">
       <!-- Header title -->
       <div class="project_detail_title">
         <h1>Le blog de voyage</h1>
@@ -40,36 +45,31 @@
       
       <!-- Project info -->
       <div class="project_detail_info flex">
-        <div class="info_left">
-          <div class="year">
-            <span>Année</span>
-            <p>2018</p>
-          </div>
-
-          <div class="category">
-            <span>Catégorie</span>
-            <p>Blog</p>
-          </div>
+        <div class="year">
+          <span>Année</span>
+          <p>2018</p>
         </div>
 
-        <div class="info_right">
-          <div class="language">
-            <span>Technologies</span>
-            <p>HTML5 - CSS3 - PHP - jQuery - Ajax</p>
-          </div>
+        <div class="category">
+          <span>Catégorie</span>
+          <p>Blog</p>
+        </div>
 
-          <div class="duration">
-            <span>Durée</span>
-            <p>En 3 jours lors de la formation à la 3W Academy</p>
-          </div>
+        <div class="language">
+          <span>Technologies</span>
+          <p>HTML5 - CSS3 - PHP - jQuery - Ajax</p>
+        </div>
+
+        <div class="duration">
+          <span>Durée</span>
+          <p>En 3 jours lors de la formation à la 3W Academy</p>
         </div>
       </div>
-
-      <div class="explore">
-        <p>Explorer</p>
-        <i class="fas fa-long-arrow-alt-down"></i>
-      </div>
-
+    </div>
+    
+    <div class="explore hide">
+      <p>Explorer</p>
+      <i class="fas fa-long-arrow-alt-down"></i>
     </div>
   </header>
   
@@ -90,37 +90,37 @@
         
         <!-- Affichage de la liste des articles  -->
         <article class="flex">
-          <div class="details_image">
-            <img class="shadow" src="assets/img/screenshots/blog/blog_liste_articles.jpg" alt="Screenshot de la page d'accueil du projet blog">
-          </div>
-          
-          <div class="details_content">
+         <div class="details_content">
             <h3>Affichage de la liste des articles</h3>
             <p>Les derniers articles du blog sont listés dans la page <em>index.php</em>. Les textes sont protégés par <em>htmlspecialchars()</em>.</p>
+          </div>
+          
+          <div class="details_image">
+            <img class="shadow" src="assets/img/screenshots/blog/blog_liste_articles.jpg" alt="Screenshot de la page d'accueil du projet blog">
           </div>
         </article>
         
         <!-- Affichage d'un article -->
         <article class="flex">
-          <div class="details_image">
-            <img class="shadow" src="assets/img/screenshots/blog/blog_articles.jpg" alt="Screenshot d'un article du projet blog">
-          </div>
-          
-          <div class="details_content">
+         <div class="details_content">
             <h3>Affichage d'un article et des commentaires</h3>
             <p>L'affichage d'un article avec ses commentaires. L'utilisateur peut laisser un commentaire qui sera stocké dans la base donnée <em>mySQL</em> puis affiché dans l'article correspondant.</p>
+          </div>
+          
+          <div class="details_image">
+            <img class="shadow" src="assets/img/screenshots/blog/blog_articles.jpg" alt="Screenshot d'un article du projet blog">
           </div>
         </article>
 
         <!-- Rédaction d'un article -->
         <article class="flex">
-         <div class="details_image">
-            <img class="shadow" src="assets/img/screenshots/blog/blog_new_articles.png" alt="Screenshot de la page administration du projet blog">
-          </div>
-          
           <div class="details_content">
             <h3>Rédaction d'un article</h3>
             <p>Dans la partie Administration du site, l'administrateur peut rédiger un nouvel article, modifier ou supprimer les articles existants.</p>
+          </div>
+          
+         <div class="details_image">
+            <img class="shadow" src="assets/img/screenshots/blog/blog_new_articles.png" alt="Screenshot de la page administration du projet blog">
           </div>
         </article>
 <!--        <button class="see_project">Tester le projet</button>-->
